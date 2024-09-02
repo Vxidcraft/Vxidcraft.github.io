@@ -1,0 +1,336 @@
+:root {
+    --colorhorde: red;
+    --coloralliance: blue;
+    --color3: cyan;
+    --color4: rgba(109, 65, 15, 0.397); 
+}
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+    
+}
+
+/* ------------------------Menu déroulant -----------------------------*/
+nav {
+
+   position: fixed;
+   flex-direction: column;
+    max-width: 50%;
+    max-height: 70px;
+    margin: 0 auto;
+    z-index: 1;
+    
+    
+ 
+}
+
+.menu > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-weight: 300;
+    font-size: 30px;
+    transition: 0.5s;
+    background: linear-gradient(13deg, rgba(34, 39, 195, 0.445) 0%, rgba(253, 52, 45, 0.438) 87%);
+    border-radius: 0 20% 20% 0%;
+
+}
+
+.menu > a {
+    transition: 0,5s ease;
+}
+
+a:hover {
+    text-decoration: line-through black 2px
+    ;
+}
+
+a:visited {
+    color: black;
+}
+
+
+
+.menu-class, .menu-maps {
+    padding: 20px;
+}
+
+
+
+
+
+
+.sub-class {
+   
+    display: none;
+    backdrop-filter: blur(4px);
+    transition: 0.5s ease;
+}
+
+.menu-class:hover .sub-class {
+    display: block;
+    
+}
+
+
+
+.sub-maps {
+    
+    display: none;
+    margin: 0 auto;
+}
+
+.menu-maps:hover .sub-maps {
+    display: inline;
+    z-index: 2;
+    
+}
+
+
+/* ------------------------------------------------------------------- */
+
+
+
+
+
+
+h1 {
+    margin: 50px;
+    font-size: 300%;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    letter-spacing: 4px;
+        
+   
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+    max-width: 70%;
+    max-height: 300px;
+    border: 3px solid;
+    background: transparent;
+    box-shadow: 9px 10px 20px 10px black;
+    backdrop-filter: blur(4px);
+    z-index: -1;
+    }
+
+
+body {
+    cursor: url(./Asset/Img/cursor.cur) auto;
+    background: url(./Asset/Img/BackgroundWoW1.jpg) fixed center/cover;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+}
+
+.table-container {
+    background: rgba(255, 255, 255, 0.466);
+    width: 70%;
+    margin: 0 auto;
+    border: 10px black solid;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 13px;
+}
+
+.logoally, .logohorde {
+    width: 30%;
+    background: transparent;
+    
+
+}
+
+p {
+    color: whitesmoke;
+    padding: 5px;
+    margin: 5px;
+}
+
+h2{
+    margin-top: 69px;
+    margin-bottom: 30px;
+}
+
+
+
+img {
+    display: grid;
+    height: 100%;
+    width: 100%;
+}
+
+table {
+    width: 40%;
+    height: 50%;
+    
+    
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.captionally {
+    font-size: large;
+    color: var(--coloralliance);
+    background: black;
+    text-align: center;
+    box-shadow: 0 0 0 0;
+}
+
+.allytable {
+    
+    margin: 40px;
+    table-layout: fixed;
+    text-align: center;
+    border: 3px solid var(--coloralliance);
+    border-color: black;
+    padding: 2px;
+    color: black;
+    letter-spacing: 1px;
+    backdrop-filter: blur(4px);
+    
+   
+}
+
+main > p {
+    width: 70%;
+    margin: 0 auto;
+}
+
+tr{
+    border: 2px solid;
+}
+
+td {
+    border: 1px solid;
+    font-size: 30px;
+
+}
+
+.captionhorde {
+    font-size: large;
+    color: var(--colorhorde);
+    background: black;
+    text-align: center;
+
+}
+
+.hordetable {
+    margin: 40px;
+    table-layout: fixed;
+    text-align: center;
+    border: 3px solid var(--coloralliance);
+    border-color: black;
+    padding: 2px;
+    color: black;
+    letter-spacing: 1px;
+    backdrop-filter: blur(4px);
+
+  
+}
+
+
+section {
+    background:rgba(255, 255, 255, 0.397);
+    border: 10px solid black;
+    width: 70%;
+    margin: 0 Auto;
+    height: 50vh;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 13px;
+}
+
+.btn-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.btn-ally {
+
+    margin: 40px;
+    width: 120px;
+    height: 50px;
+    border-radius: 40px;
+    background: linear-gradient(0deg, rgba(171, 195, 34, 0.301) 8%, rgba(45, 52, 253, 0.432) 100%);
+    backdrop-filter: blur(4px);
+    cursor: pointer;
+    transition: 0.5s ease;
+    
+}
+
+.btn-ally img {
+    display: none;
+}
+
+.btn-ally:hover img {
+    display: block;
+    
+}
+
+.btn-ally:hover {
+    letter-spacing: 1px;
+    background: linear-gradient(0deg, rgba(171, 195, 34, 0.301) 8%, rgba(45, 52, 253, 0.432) 100%);
+    font-size: 20px;
+    height: 120px;
+    
+}
+
+.btn-horde {
+    margin: 40px;
+    width: 120px;
+    height: 50px;
+    border-radius: 40px;
+    background: linear-gradient(0deg, rgba(195, 184, 34, 0.411) 0%, rgba(253, 45, 118, 0.514) 96%);
+    /* background-image: url(./Asset/Img/logo-horde.png); */
+    backdrop-filter: blur(4px);
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.btn-horde img {
+    display: none;
+   
+}
+
+.btn-horde:hover img {
+    display: block;
+    
+    
+}
+
+.btn-horde:hover {
+    
+    letter-spacing: 1px;
+    background: linear-gradient(0deg, rgba(195, 184, 34, 0.411) 0%, rgba(253, 45, 118, 0.514) 96%);
+    font-size: 20px;
+    height: 120px;
+    
+}
+
+input {
+    width: 40%;
+    height: 100px;
+    margin-top: 40px;
+    background: none;
+   
+    text-align: center;
+}
+

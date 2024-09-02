@@ -1,0 +1,172 @@
+:root {
+    --colorhorde: red;
+    --coloralliance: blue;
+    --color3: cyan;
+    --color4: rgb(88, 21, 21); 
+}
+
+html {
+    min-width: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type:none;
+}
+
+nav {
+    margin: 0 auto;
+    width: 50%;
+    border-radius: 20px;
+    justify-content: space-around;
+    justify-items: center;
+    background: var(--color4);
+}
+ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;  
+}
+
+li {
+    font-size:  20px;
+    font-weight: 500;
+    padding: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    cursor: pointer;
+    margin: 10px;
+    background: rgb(88, 21, 21);
+    transition: 0.5s ease;
+}
+
+li:hover{
+    background: rgba(31, 7, 7, 0.5);
+    border-radius: 10px;
+}
+
+
+h2 {
+    font-size: 40px;
+    margin: 0 auto;
+    width: 10%;
+    text-align: center;
+    background: black;
+    color: antiquewhite;
+    border-radius: 20px;
+}
+
+
+body {
+    background: url(./Img/BackgroundWoW1.jpg) fixed center/cover;
+
+    
+}
+
+.card {
+       margin: 5% 10% 5% 10%;
+    border: 3px solid;
+    background: transparent;
+    box-shadow: 9px 10px 20px 10px black;
+    backdrop-filter: blur(4px);
+    position: relative;
+    }
+
+.grid-container {
+    
+    box-sizing: border-box;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 20% 60% 20%;
+    align-items: center;
+}
+H1 {
+    margin: 0 auto;
+    width: 60%;
+    font-size: 300%;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: underline;
+    
+}
+
+
+.column {
+    
+    
+}
+
+
+.logoally img {
+    height: 90%;
+}
+
+p {
+    color: whitesmoke;
+    padding: 5px;
+    margin: 5px;
+}
+
+.logohorde {
+    height: 110%;
+
+}
+
+img {
+    display: grid;
+    height: 100%;
+    width: 100%;
+}
+
+.table-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.captionally {
+    font-size: large;
+    color: var(--coloralliance);
+    background: black;
+    text-align: center;
+}
+
+.allytable {
+    table-layout: auto;
+    width: 25%;
+    height: 25%;
+    text-align: center;
+    border: 3px solid var(--coloralliance);
+    border-color: black;
+    padding: 2px;
+    color: aliceblue;
+    box-shadow: -4px 9px 15px 2px var(--color);
+    backdrop-filter: blur(4px);
+}
+tr{
+    border: 2px solid;
+}
+
+.captionhorde {
+    font-size: large;
+    color: var(--colorhorde);
+    background: black;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.hordetable {
+    table-layout: auto;
+    width: 25%;
+    height: 25%;
+    text-align: center;
+    border: 3px solid var(--coloralliance);
+    border-color: black;
+    padding: 2px;
+    color: aliceblue;
+    box-shadow: 7px 4px 12px 3px var(--colorhorde);
+    backdrop-filter: blur(4px);
+}
