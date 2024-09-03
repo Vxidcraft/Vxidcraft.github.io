@@ -7,7 +7,7 @@ const btnHorde = document.querySelector(".btn-horde");
 const raceOutput = document.getElementById("race-output");
 const classOutput = document.getElementById("class-output");
 
-let AArace = ["Humain", "EDN", "Nain"];
+let AArace = ["Humain", "Elf de la nuit", "Nain"];
 let AAclass = ["Guerrier", "mage", "Voleur", "Pretre", "Démoniste"];
 
 let AHrace = ["Orc", "Mort-Vivant", "Troll"];
@@ -27,3 +27,5 @@ btnHorde.addEventListener("click", () => {
   raceOutput.value = AHrace[randHAR];
   classOutput.value = AHclass[randHAC];
 });
+
+// ici je n'arrive pas à remettre à zero pur chaque clique sur l'icon pour regénérer.

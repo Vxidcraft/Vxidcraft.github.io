@@ -72,12 +72,19 @@ a:visited {
 .sub-class {
    
     display: none;
-    backdrop-filter: blur(4px);
+    margin: 20px 20px;
+    transform: translateY(-40px);
+    position: absolute;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    border: 1px black solid;
     transition: 0.5s ease;
+    
 }
 
 .menu-class:hover .sub-class {
-    display: block;
+    display: inline-block;
+    letter-spacing: 2px;
     
 }
 
@@ -86,12 +93,18 @@ a:visited {
 .sub-maps {
     
     display: none;
-    margin: 0 auto;
+    margin: 20px 20px 20px 35px;
+    position: absolute;
+  transform: translateY(-40px);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    border: 1px black solid;
 }
 
 .menu-maps:hover .sub-maps {
     display: inline;
-    z-index: 2;
+    letter-spacing: 1px;
+    
     
 }
 
@@ -116,11 +129,12 @@ h1 {
 }
 
 header {
+    width: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 40px auto;
-    max-width: 70%;
+    
     max-height: 300px;
     border: 3px solid;
     background: transparent;
@@ -148,7 +162,7 @@ body {
 }
 
 .logoally, .logohorde {
-    width: 30%;
+    width: 100%;
     background: transparent;
     
 
@@ -333,4 +347,76 @@ input {
    
     text-align: center;
 }
+
+
+
+
+/* ----------------Media Query--------------------- */
+
+@media screen and (max-width: 1050px) {
+
+    header {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-height: 300px;
+            border: 3px solid;
+            background: transparent;
+            box-shadow: 9px 10px 20px 10px black;
+            backdrop-filter: blur(4px);
+           
+    }
+
+    .logoally, .logohorde {
+        display: none;
+    }
+
+
+
+    .table-container {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .allytable {
+        width: 80%;
+        margin: 20px;
+        table-layout: fixed;
+        text-align: center;
+        border: 3px solid var(--coloralliance);
+        border-color: black;
+        padding: 2px;
+        color: black;
+        letter-spacing: 1px;
+        backdrop-filter: blur(4px);
+        
+       
+    }
+
+    .hordetable {
+        width: 80%;
+        margin: 20px;
+        table-layout: fixed;
+        text-align: center;
+        border: 3px solid var(--coloralliance);
+        border-color: black;
+        padding: 2px;
+        color: black;
+        letter-spacing: 1px;
+        backdrop-filter: blur(4px);
+    
+      
+    }
+
+    main > p {
+        width: 50%;
+    }
+
+    section {
+        width: 50%
+    }
+};
+    
 
